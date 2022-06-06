@@ -1,2 +1,2 @@
 # aulagit
-repositório para teste de estudos sobre GIT e GITHUB
+Repositório para testes e estudos sobre GIT e GITHUB.
