@@ -1,4 +1,4 @@
-#Guia de referência rápida de comandos básicos do prompt do Windows e comandos do GIT:
+# Guia de referência rápida de comandos básicos do prompt do Windows e comandos do GIT:
 
 ##Comandos Básicos de Prompt de Comando do Windows:
 CD \         -> vai para diretório raiz
