@@ -27,11 +27,23 @@ git add --all | git add .
 ### salva as mudanças no repositório
 git commit -m "mensagem"
 
-### Cria um "branch" (ramo) teste
+### cria um "branch" (ramo) teste
 git branch teste
+
+### listar branches locais
+git branch --list
+
+### listar branches locais e online
+git branch -a
 
 ### trocando de branch (ramo), por padrão o github utiliza "main"
 git branch -M main
+
+### excluir um branch no local
+git branch -d nomeDoBranchLocal
+
+### excluir um branch remoto
+git push origin --delete nomeDoBranchRemoto
 
 ### listar commits realizados
 git log
