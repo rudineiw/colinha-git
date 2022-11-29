@@ -29,6 +29,11 @@ git add aula1.txt
 git add --all | git add .
 ```
 
+### lista o estado atual de arquivos e pastas do repositório
+```
+git status
+```
+
 ### salva as mudanças no repositório
 ```
 git commit -m "mensagem"
