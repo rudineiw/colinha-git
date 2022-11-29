@@ -1,49 +1,59 @@
-# Guia de referência rápida de comandos básicos do prompt do Windows e comandos do GIT:
+# Guia de referência rápida de comandos básicos do prompt do Windows e comandos do GIT
 
-##Comandos Básicos de Prompt de Comando do Windows:
-CD \         -> vai para diretório raiz
-CD ..        -> sobe um diretório
-CD exemplo   -> vai para diretório "exemplo"
-DIR          -> lista os arquivos do diretório
-MKDIR        -> cria um diretório
+## Comandos Básicos de Prompt de Comando do Windows
+cd \         -> vai para diretório raiz
+cd ..        -> sobe um diretório
+cd exemplo   -> vai para diretório "exemplo"
+dir          -> lista os arquivos do diretório
+mkdir        -> cria um diretório
 
-##Comandos do GIT por linha de comando:
-=> para configurar 
+## Comandos do GIT por linha de comando
+### configurar git
 git config --global user.name "seu nome aqui"
 git config --global user.email "seu e-mail aqui"
 
-=> ver configuração
+### exibir configuração atual do git
 git config --list
 
-=> inicializa um diretório com o git
+### inicialiar repositório git
 git init
 
-=> adiciona um arquivo no índice
+### adiciona um arquivo no repositório
 git add aula1.txt
 
-=> adiciona tudo no índice
-git add --all
+### adicionar todos os arquivos e pastas
+git add --all | git add .
 
-=> salva as mudanças no repositório
+### salva as mudanças no repositório
 git commit -m "mensagem"
 
-=> retorna os arquivos de trabalho
-git restore .
-
-=> Cria um "branch" (ramo) teste
+### Cria um "branch" (ramo) teste
 git branch teste
 
-=> Passa a trabalhar no ramo teste
-git checkout teste
+### trocando de branch (ramo), por padrão o github utiliza "main"
+git branch -M main
 
-=> Mostra o log
+### listar commits realizados
 git log
 
-=> Enviar
-git push https://TOKEN@github.com/rudineiw/aulagit.git (para github rudineiw, repositório aulagit.git)
+### comaçar a trabalhar no ramo teste
+git checkout teste
 
-=> Buscar
-git pull https://TOKEN@github.com/rudineiw/aulagit.git
+### listar chaves SSH
+ls -al ~/.ssh
 
-=> Clonar
-git clone https://TOKEN@github.com/rudineiw/aulagit.git
+### gerar chave SSH
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+### adicinar chave SSH ao agente de SSH
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+### testar conexão SSH
+ssh -T git@github.com
+
+### associando um repositório local com o github
+git remote add origin git@github.com:USUARIO/RESPOSITORIO.git
+
+### enviando arquivos para o github
+git push -u origin main
