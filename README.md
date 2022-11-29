@@ -34,14 +34,19 @@ git add --all | git add .
 git commit -m "mensagem"
 ```
 
-### cria um "branch" (ramo) teste
+### cria um branch: teste
 ```
 git branch teste
 ```
 
+### mudar para outro branch: teste
+```
+git checkout teste
+```
+
 ### listar branches locais
 ```
-git branch --list
+git branch
 ```
 
 ### listar branches locais e online
@@ -49,19 +54,19 @@ git branch --list
 git branch -a
 ```
 
-### trocando de branch (ramo), por padrão o github utiliza "main"
+### renomear branch. OBS: branch padrão do github é o "main"
 ```
-git branch -M main
+git branch -m nome-antigo novo-nome
 ```
 
-### excluir um branch no local
+### excluir um branch local. OBS: não deve estar localizado no branch que deseja remover
 ```
-git branch -d nomeDoBranchLocal
+git branch -d nome-do-branch-local
 ```
 
 ### excluir um branch remoto
 ```
-git push origin --delete nomeDoBranchRemoto
+git push origin --delete nome-do-branch-remoto
 ```
 
 ### listar commits realizados
