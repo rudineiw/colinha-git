@@ -1,19 +1,18 @@
 # Guia de referência rápida de comandos básicos do prompt do Windows e comandos do GIT
 
-## Comandos Básicos de Prompt de Comando do Windows
-cd \         -> vai para diretório raiz
-cd ..        -> sobe um diretório
-cd exemplo   -> vai para diretório "exemplo"
-dir          -> lista os arquivos do diretório
-mkdir        -> cria um diretório
-
 ## Comandos do GIT por linha de comando
 ### configurar git
+```
 git config --global user.name "seu nome aqui"
+```
+```
 git config --global user.email "seu e-mail aqui"
+```
 
 ### exibir configuração atual do git
+```
 git config --list
+```
 
 ### inicialiar repositório git
 git init
