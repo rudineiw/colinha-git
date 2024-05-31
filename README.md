@@ -14,7 +14,7 @@ git config --global user.email "seu e-mail aqui"
 git config --list
 ```
 
-### inicialiar repositório git
+### inicializar repositório git
 ```
 git init
 ```
@@ -94,7 +94,7 @@ ls -al ~/.ssh
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
-### adicinar chave SSH ao agente de SSH
+### adicionar chave SSH ao agente de SSH
 ```
 eval "$(ssh-agent -s)"
 ```
