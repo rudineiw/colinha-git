@@ -79,7 +79,7 @@ git push origin --delete nome-do-branch-remoto
 git log
 ```
 
-### comaçar a trabalhar no ramo teste
+### começar a trabalhar no ramo teste
 ```
 git checkout teste
 ```
